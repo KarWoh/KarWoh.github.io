@@ -28,7 +28,7 @@ alert("Password accepted!");
 }
 
 let elPassword2 = document.getElementById("kataLaluan2");
-elPassword2.addEventListener("blur",function(){
+elPassword2.addEventListener("blur", function() {
     let a = document.getElementById("kataLaluan2");
     checkPasswordLength2(a.value);
 });
