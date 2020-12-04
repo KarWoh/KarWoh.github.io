@@ -16,6 +16,6 @@ function checkPasswordLength(){
     }
 }
 
-let elPassword = document.getElementById("KataLaluan");
+let elPassword = document.getElementById("kataLaluan");
 elPassword.onblur = checkPasswordLength;
 
