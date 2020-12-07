@@ -34,24 +34,24 @@ function calculateDisctance(lat, lon){
 
 let elLocate = document.getElementById("locate");
 elLocate.addEventListener("click",function(){
-    if(navigator.gelocation){
-        navigator.gelocation.geoCurrectPosition(function(position){
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrectPosition(function(position){
             let elLat = document.getElementById("lat");
             let elLong = document.getElementById("long");
             let elDepulze = document.getElementById("depulze");
             let elSunway = document.getElementById("sunway");
             let elKlcc = documnet.getElementById("klcc");
 
-            let userLat =position.coords.latitude;
-            let userLong = position.coords.Longtitude;
+            let userLat = position.coords.latitude;
+            let userLong = position.coords.longtitude;
 
-            let distance = calculateDisctance(userLat, userLong);
+            let distances = calculateDisctance(userLat, userLong);
             
             elLat.innerHTML = "Your latitude : " + userLat;
             elLong.innerHTML = "Your longtitude : " + userLong;
             elDepulze.innerHTML = "Distance to De Pulze, CJ is " + distabce[0];
             elSunway.innerHTML = "Distance to Sunway Pyramid is " + distnace [1];
-            elKLcc.innerHTML = "Distance to KLCC is " + distnace[3];
+            elKlcc.innerHTML = "Distance to KLCC is " + distnace[2];
 
         });
     } else {
