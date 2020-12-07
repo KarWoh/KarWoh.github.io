@@ -35,7 +35,7 @@ function calculateDisctances(lat, lon) {
 let elLocate = document.getElementById("locate");
 elLocate.addEventListener("click", function(){
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrectPosition(function (position){
+        navigator.geolocation.getCurrentPosition(function (position){
             let elLat = document.getElementById("lat");
             let elLong = document.getElementById("long");
             let elDepulze = document.getElementById("depulze");
