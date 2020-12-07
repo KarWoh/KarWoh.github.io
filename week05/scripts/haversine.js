@@ -24,7 +24,7 @@ function roundVal(val){
     return result;
 }
 
-function calculateDisctance(lat, lon){
+function calculateDisctances(lat, lon) {
     let d1 = haversine(let, lon, 2.922562, 101.650965);// de pulze, cycberjaya
     let d2 = haversine(lat, lon, 3.073065, 101.607787);// Sunway Pyramid
     let d3 = haversine(lat, lon, 3.158761, 101.714524);// KLCC
@@ -34,7 +34,7 @@ function calculateDisctance(lat, lon){
 
 let elLocate = document.getElementById("locate");
 elLocate.addEventListener("click", function(){
-    if(navigator.geolocation) {
+    if (navigator.geolocation) {
         navigator.geolocation.getCurrectPosition(function (position){
             let elLat = document.getElementById("lat");
             let elLong = document.getElementById("long");
