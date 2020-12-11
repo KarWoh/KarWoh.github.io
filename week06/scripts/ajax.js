@@ -1,7 +1,7 @@
-function getRandomUser(){
+function getRandomUser() {
     let xhttp = new XMLHttpRequest(); //create request obj
 
-    xhttp.onreadystatechange = function(){
+    xhttp.onreadystatechange = function () {
         if(this.readyState == 4 && this.status == 200){
             let data = JSON.parse(this.response);
             let elFirstName = document.getElementId("firstName");
@@ -12,7 +12,7 @@ function getRandomUser(){
             let elAddress = document.getElementId("address");
             let elEmail = document.getElementById("email");
 
-            elJsonResult.innerHtml = this.response;
+            elJsonResult.innerHTML = this.response;
         }
     }
 
@@ -22,6 +22,6 @@ function getRandomUser(){
 } 
 
 let elGetRandomUser = document.getElementId("getRandomUserBtn");
-elGetRandomUser.addEventListener("click", function(){
+elGetRandomUser.addEventListener("click", function() {
     getRandomUser();
 });
