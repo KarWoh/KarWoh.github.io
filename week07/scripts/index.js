@@ -12,4 +12,4 @@ let app2 = new Vue ({
         linkURL: "https://bbc.in/2LAnJs8",
         linkText: "Google is down!"
     }
-})
+});
