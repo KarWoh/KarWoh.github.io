@@ -13,7 +13,7 @@ function GetBookings(){
             let gEmail = json.bookings[i].email;
             let gPax = json.bookings[i].pax;
             let gId = json.bookings[i].id;
-            let gRemarks = jason.booking[i].remarks;
+            let gRemarks = json.booking[i].remarks;
             let buttonId = "delete" + gId;
 
             let row = bookingList.insertRow(bookingList.rows.length);
@@ -22,13 +22,13 @@ function GetBookings(){
             row.insertCell(2).innerHTML = gEmail;
             row.insertCell(3).innerHTML = gPax;
             row.insertCell(4).innerHTML = gRemarks;
-            row.insertCell(5).innerHTML = 
-            "<buttong id='" + buttonId + "'class='btn btn-danger'>Delete</button>";
+            row.insertCell(5).innerHTML = "<buttong id='" + 
+            buttonId + "'class='btn btn-danger'>Delete</button>";
 
             bookingIds.push(buttonId);
         }
 
-        for(let j =0; j < bookingIds.length; j++) {
+        for(let j = 0; j < bookingIds.length; j++) {
             let el = document.getElementById(bookingIds[j]);
             el.addEventListener("click", function () {
                 let theId = bookingIds[j].replace("delete","");
