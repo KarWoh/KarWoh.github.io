@@ -28,12 +28,18 @@ function GetBookings(){
             bookingIds.push(buttonId);
         }
 
-        for(let j =0; j < bookingIds.length; j++){
+        for(let j =0; j < bookingIds.length; j++) {
             let el = document.getElementById(bookingIds[j]);
-            el.addEventListener("click", function(){
+            el.addEventListener("click", function () {
                 let theId = booking.Ids[j].replace("delete","");
                 alert(theId);
             });
         }
     });
 }
+
+window.addEventListener("load", function () {
+    document.getElementById("refreshList").addEventListener("click", function () {
+        GetBookings();
+    });
+})
