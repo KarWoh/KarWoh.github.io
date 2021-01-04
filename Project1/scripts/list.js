@@ -53,7 +53,7 @@ window.addEventListener("load", function () {
 })
 
 function DeleteBooking(id) {
-    let url = 'https://api.sheety.co/0eecbdd4630bcf55c41605d880893e49/project1JayaOnn/bookings' + id;
+    let url = 'https://api.sheety.co/0eecbdd4630bcf55c41605d880893e49/project1JayaOnn/bookings/' + id;
     fetch(url, {
         method: 'DELETE',
     })
