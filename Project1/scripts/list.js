@@ -17,7 +17,7 @@ function GetBookings(){
         for (let i = 0; i < json.bookings.length; i++) {
             let gName = json.bookings[i].name;
             let gEmail = json.bookings[i].email;
-            let gPhone = json.bookings[i].Phone;
+            let gPhone = json.bookings[i].phone;
             let gItem = json.bookings[i].item;
             let gId = json.bookings[i].id;
             let gRemarks = json.bookings[i].remarks;

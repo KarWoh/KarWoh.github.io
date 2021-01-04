@@ -5,7 +5,7 @@ function BookNow(guestName, guestEmail, guestPhone, guestItem, guestRemarks) {
             name: guestName,
             email: guestEmail,
             phone: guestPhone,
-            pax: guestItem,
+            Item: guestItem,
             remarks: guestRemarks
       }
     }
